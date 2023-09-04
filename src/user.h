@@ -47,7 +47,11 @@ struct Binding {
     const union Arg arg;
 };
 
+void layout(struct Monitor *monitor, const union Arg *arg);
 void spawn(struct Monitor *monitor, const union Arg *arg);
 void systray(struct Monitor *monitor, const union Arg *arg);
+void tag(struct Monitor *monitor, const union Arg *arg);
+void toggle_view(struct Monitor *monitor, const union Arg *arg);
+void view(struct Monitor *monitor, const union Arg *arg);
 
 #endif // USER_H_
